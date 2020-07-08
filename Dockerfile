@@ -1,4 +1,4 @@
-FROM ubuntu 
+FROM ubuntu
 
 
 HEALTHCHECK --interval=5s \ 
