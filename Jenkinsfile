@@ -1,7 +1,7 @@
 node{
     def app
     
-    stage('Clone repository"){
+    stage('Clone repository') {
         
         checkout scm
     }
@@ -18,10 +18,10 @@ node{
         }
     }
     
-    stage('Push image) {
+    stage('Push image') {
     
         docker.withRegistry('https://registry.hub.docker.com','Dockerhub') {
-            add.push("$env.BUILD_NUMBER)")
+            add.push("$(env.BUILD_NUMBER)")
             add.push("latest")
         }
    }
