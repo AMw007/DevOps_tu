@@ -1,4 +1,4 @@
-FROM node:7-onbuild
+FROM ubuntu 
 
 
 HEALTHCHECK --interval=5s \ 
